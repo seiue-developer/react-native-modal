@@ -470,6 +470,7 @@ class ReactNativeModal extends Component {
     // at the last released position when you try to open it.
     // TODO: Could certainly be improved - no idea for the moment.
     if (this.state.isSwipeable) {
+      this.state.originScrollY = 0
       this.state.pan.setValue({x: 0, y: 0});
     }
 
